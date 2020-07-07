@@ -7,9 +7,9 @@ phases:
   post_build:
     commands:
       - mvn package
-      - mv ../target/deploy FirstWebProject.war
+      - mv target FirstWebProject.war
 artifacts:
   files:
     - FirstWebProject.war
     - .ebextensions/**/*
-  base-directory: '../target/deploy'
+  base-directory: 'target'
