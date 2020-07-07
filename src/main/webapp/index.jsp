@@ -18,6 +18,7 @@
 		<select name="ImageName">
 			<option>Sindhuja</option>
 			<option>Chota Beem</option>
+			<option>Mahendhiran</option>
 		</select>
 	</form>
 </div>
