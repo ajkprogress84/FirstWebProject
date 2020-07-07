@@ -1,14 +1,9 @@
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      java: corretto11
-  post_build:
+  build:
     commands:
       - mvn package
-      - mv target/FirstWebProject-0.0.1-SNAPSHOT.war FirstWebProject.war
-      - echo $CODEBUILD_SRC_DIR
 artifacts:
   files:
     - target/FirstWebProject-0.0.1-SNAPSHOT.war
