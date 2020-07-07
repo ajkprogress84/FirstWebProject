@@ -10,6 +10,4 @@ phases:
       - mv target/FirstWebProject-0.0.1-SNAPSHOT.war FirstWebProject.war
 artifacts:
   files:
-    - FirstWebProject.war
-    - .ebextensions/**/*
-  base-directory: 'target/FirstWebProject'
+    - target/FirstWebProject.war
