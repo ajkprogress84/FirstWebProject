@@ -7,7 +7,7 @@ phases:
   post_build:
     commands:
       - mvn package
-      - mv target/FirstWebProject.war FirstWebProject.war
+      - mv target/deploy FirstWebProject.war
 artifacts:
   files:
     - FirstWebProject.war
