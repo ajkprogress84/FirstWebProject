@@ -1,17 +1,15 @@
-version : 0.2
-phases : 
-  pre-build:
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto11
+  post_build:
     commands:
-    - echo "Entered the pre build phase"
-    build:
-    commands:
-    - echo "Entered build phase"
-    - mvn clean install
-    post-build:
-    commands:
-    - echo "Entered the post build phase"
-  artifacts:
-    files:
-    - deploy/**/* 
-   
-  
+      - mvn package
+      - mv target/FirstWebProject.war FirstWebProject.war
+artifacts:
+  files:
+    - FirstWebProject.war
+    - .ebextensions/**/*
+  base-directory: 'target/FirstWebProject'
