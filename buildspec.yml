@@ -12,4 +12,4 @@ artifacts:
   files:
     - FirstWebProject.war
     - .ebextensions/**/*
-  base-directory: 'target/FirstWebProject'
+  base-directory: 'target/deploy'
